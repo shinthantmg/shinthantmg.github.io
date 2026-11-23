@@ -282,6 +282,47 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
       </div>
     </article>
 
+    <!-- AI chatbot -->
+    <article class="project">
+      <div class="shot" aria-hidden="true">
+        <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" fill="#e3ece4"/>
+          <rect x="150" y="24" width="340" height="352" rx="18" fill="#fff"/>
+          <path d="M150 42a18 18 0 0 1 18-18h304a18 18 0 0 1 18 18v32H150z" fill="#1f4d3f"/>
+          <circle cx="178" cy="50" r="14" fill="#2f6b55"/>
+          <rect x="202" y="40" width="120" height="9" rx="4" fill="#fff"/><rect x="202" y="55" width="150" height="7" rx="3" fill="#9fc1ac"/>
+          <rect x="166" y="92" width="210" height="44" rx="14" fill="#f2f6f2" stroke="#d7e0d8"/>
+          <rect x="180" y="106" width="170" height="7" rx="3" fill="#9aa9a1"/><rect x="180" y="119" width="120" height="7" rx="3" fill="#9aa9a1"/>
+          <rect x="250" y="148" width="224" height="30" rx="14" fill="#1f4d3f"/>
+          <rect x="264" y="160" width="190" height="7" rx="3" fill="#cfe3d5"/>
+          <rect x="166" y="190" width="230" height="58" rx="14" fill="#f2f6f2" stroke="#d7e0d8"/>
+          <rect x="180" y="204" width="190" height="7" rx="3" fill="#9aa9a1"/><rect x="180" y="217" width="160" height="7" rx="3" fill="#9aa9a1"/><rect x="180" y="230" width="100" height="7" rx="3" fill="#9aa9a1"/>
+          <g fill="none" stroke="#c9dacb" stroke-width="2"><rect x="166" y="262" width="58" height="26" rx="13"/><rect x="232" y="262" width="58" height="26" rx="13"/><rect x="298" y="262" width="58" height="26" rx="13"/></g>
+          <g fill="#1f4d3f"><rect x="180" y="272" width="30" height="6" rx="3"/><rect x="246" y="272" width="30" height="6" rx="3"/><rect x="312" y="272" width="30" height="6" rx="3"/></g>
+          <rect x="166" y="320" width="252" height="38" rx="19" fill="none" stroke="#c9dacb" stroke-width="2"/>
+          <circle cx="448" cy="339" r="20" fill="#e07a5f"/><path d="M440 339l16-7-7 16-2-6z" fill="#fff"/>
+          <g transform="translate(520 120)"><rect width="96" height="34" rx="8" fill="#1f4d3f"/><text x="12" y="22" font-family="monospace" font-size="13" fill="#fff">tools()</text></g>
+          <path d="M490 137h30" stroke="#1f4d3f" stroke-width="2" stroke-dasharray="4 4"/>
+        </svg>
+      </div>
+      <div>
+        <span class="pill">Finished</span>
+        <h3>Lotus Spa AI Assistant: Booking Chatbot</h3>
+        <p class="muted">A chatbot that answers customers only from the spa's real data and books appointments inside the chat. A free demo mode runs in any browser; AI mode uses OpenAI with function calling.</p>
+        <ul class="feat">
+          <li>Books step by step: treatment, day, free time, name, phone, then confirm</li>
+          <li>AI mode calls 5 tools for prices, hours and free times, so it never makes things up</li>
+          <li>API key kept on the server, rate limiting, and protection against prompt injection</li>
+          <li>31 unit tests plus Playwright browser tests, running on GitHub Actions</li>
+        </ul>
+        <ul class="meta"><li>JavaScript</li><li>Node.js</li><li>OpenAI API</li><li>Function calling</li><li>Playwright</li></ul>
+        <div class="links">
+          <a class="btn" href="https://shinthantmg.github.io/spa-ai-chatbot/">Try the chatbot</a>
+          <a class="btn alt-btn" href="https://github.com/shinthantmg/spa-ai-chatbot">View code</a>
+        </div>
+      </div>
+    </article>
+
     <!-- QA testing -->
     <article class="project">
       <div class="shot" aria-hidden="true">
@@ -380,7 +421,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
     { title: "Back-end and data", items: ["Node.js", "Express", "PostgreSQL", "SQL", "REST APIs", "JWT authentication"] },
     { title: "Testing and QA", items: ["Playwright", "End-to-end testing", "Test plans", "Bug reports", "GitHub Actions (CI)"] },
     { title: "Tools", items: ["Git", "GitHub", "VS Code", "npm", "pgAdmin", "AI coding assistants"] },
-    { title: "Learning next", next: true, items: ["OpenAI API", "n8n automation", "LINE Messaging API"] }
+    { title: "AI and chatbots", items: ["OpenAI API", "Function calling (tools)", "Prompt design", "Chatbot conversation flows"] },
+    { title: "Learning next", next: true, items: ["n8n automation", "LINE Messaging API"] }
   ];
   document.getElementById("skill-list").innerHTML = skills.map(g =>
     `<div><h3>${g.title}</h3><ul class="chips${g.next ? " next" : ""}">${g.items.map(i => `<li>${i}</li>`).join("")}</ul></div>`

@@ -6,135 +6,167 @@
 <title>Shin Thant Maung · Web Developer</title>
 <meta name="description" content="Shin Thant Maung, ICT student at Rangsit University, Thailand. Looking for a remote internship in web development, software development, AI automation, chatbots or QA from January 2027.">
 <meta property="og:title" content="Shin Thant Maung · Web Developer">
-<meta property="og:description" content="ICT student at Rangsit University. Full-stack web projects with React, Node.js and PostgreSQL. Available for a remote internship from January 2027.">
+<meta property="og:description" content="ICT student at Rangsit University. I turn ideas sketched by people into software people use. Available for a remote internship from January 2027.">
 <meta property="og:image" content="https://shinthantmg.github.io/assets/shin-thant-maung.jpg">
 <meta property="og:url" content="https://shinthantmg.github.io/">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Ctext x='5' y='23' font-family='Arial' font-weight='900' font-size='18' fill='%23fff'%3ES%3C/text%3E%3Crect x='21' y='18' width='5' height='5' fill='%23e4002b'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f5bd6'/%3E%3Cpath d='M8 22c4-1 6-9 9-9s3 6 7 5' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='9' r='3' fill='%23ff6b4a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400;62..125,600;112,800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <style>
-/* VOICE  a student's professional site: confident, tidy, honest
-   IDEA   a code editor: the profile is written as a small JavaScript file
-   PICTURE portrait beside the name, then a large editor window with the profile as code
-   COLOUR white / black / signal red #e4002b / one grey; night #0e0e0e
-   TYPE   Archivo wide 800 display + Archivo text, JetBrains Mono in code
-   LAYOUT laptop: photo + name across the top, editor full width; phone: stacked */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0e0e0e);--ink:light-dark(#111111,#f2f2f2);--grey:light-dark(#5f5f5f,#a8a8a8);--line:light-dark(#e2e2e2,#2a2a2a);--panel:light-dark(#f4f4f4,#171717);--red:#e4002b;--ed:#141414;--edl:#1f1f1f}
+/* VOICE  a student's personal site: warm, honest, hands-on
+   IDEA   a maker's workbench: ideas drawn by hand on graph paper, then built with code
+   PICTURE a pencil sketch of an app turning into the finished, tested product
+   COLOUR white paper, graphite ink, blueprint blue for code, coral marker for human notes; night = blueprint
+   TYPE   Space Grotesk headings, Inter text, Caveat for handwritten notes, JetBrains Mono for code
+   LAYOUT laptop: name + taped photo, then the sketch-to-product strip; phone: stacked */
+:root{color-scheme:light dark;
+  --paper:light-dark(#ffffff,#0e1626);--paper-2:light-dark(#f5f8fc,#132037);--grid:light-dark(#e2eaf5,#1d2c46);
+  --ink:light-dark(#1d2127,#edf2f8);--graphite:light-dark(#59616d,#a3aebd);--line:light-dark(#dfe5ee,#26375a);
+  --blue:light-dark(#1f5bd6,#79a6ff);--blue-soft:light-dark(#e8f0ff,#1a2b4d);
+  --marker:light-dark(#e8553a,#ff8a6b);--hl:light-dark(#fff0a3,#4a4320);--card:light-dark(#ffffff,#16233b)}
 :root[data-theme=light]{color-scheme:light}
 :root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Archivo,system-ui,sans-serif;overflow-x:clip}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
 a{color:inherit}
 img{max-width:100%;display:block}
 .wrap{max-width:1180px;margin:0 auto}
-.band{padding-block:clamp(48px,6vw,88px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
-.alt{background:var(--panel)}
-h1{font-weight:800;font-stretch:112%;font-size:clamp(40px,7vw,88px);line-height:1;letter-spacing:-.03em;margin:0 0 16px;text-wrap:balance}
-h2{font-weight:800;font-stretch:112%;font-size:clamp(30px,4vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0 0 28px;text-wrap:balance}
-h3{font-size:21px;line-height:1.25;margin:0 0 8px}
+.band{padding-block:clamp(52px,7vw,96px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.alt{background:var(--paper-2)}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.02em;margin:0}
+h1{font-size:clamp(44px,7vw,84px);line-height:1;margin-bottom:18px;text-wrap:balance}
+h2{font-size:clamp(32px,4vw,46px);line-height:1.05;text-wrap:balance}
+h3{font-size:21px;line-height:1.25;margin-bottom:8px}
 p{margin:0 0 1em}
-.lead{font-size:clamp(17px,1.6vw,20px);max-width:60ch;margin:0}
-.muted{color:var(--grey)}
+.lead{font-size:clamp(17px,1.6vw,20px);max-width:58ch;margin:0}
+.muted{color:var(--graphite)}
+.hand{font-family:Caveat,"Comic Sans MS",cursive;font-weight:700;color:var(--marker);font-size:24px;line-height:1.1}
+mark{background:linear-gradient(transparent 55%,var(--hl) 55%);color:inherit;padding:0 2px}
+
+/* Section titles with a hand-drawn underline and a handwritten note */
+.title{display:flex;flex-wrap:wrap;align-items:flex-end;gap:6px 18px;margin-bottom:34px}
+.title h2{position:relative;padding-bottom:10px}
+.title h2::after{content:"";position:absolute;left:0;bottom:0;width:min(100%,220px);height:10px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 10' preserveAspectRatio='none'%3E%3Cpath d='M2 6C40 2 80 9 120 5s70-3 96 1' fill='none' stroke='%23e8553a' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;background-size:100% 100%}
+.title .hand{transform:rotate(-2deg);padding-bottom:12px}
 
 /* Navigation */
-nav{position:sticky;top:0;z-index:5;background:var(--bg);border-top:8px solid var(--ink);border-bottom:1px solid var(--line);padding:0 max(5vw,16px)}
-nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 24px;min-height:60px}
-.logo{font-weight:800;font-stretch:112%;font-size:19px;text-decoration:none}
-.logo b{color:var(--red)}
-nav ul{display:flex;flex-wrap:wrap;gap:0 20px;list-style:none;margin:0;padding:0}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:0 max(5vw,16px)}
+nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 24px;min-height:62px}
+.logo{display:flex;align-items:center;gap:8px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:19px;text-decoration:none}
+.logo svg{width:30px;height:30px}
+nav ul{display:flex;flex-wrap:wrap;gap:0 22px;list-style:none;margin:0;padding:0}
 nav ul a{display:inline-block;padding:10px 0;text-decoration:none;font-weight:600;font-size:15px}
-nav ul a:hover{color:var(--red)}
+nav ul a:hover{color:var(--blue)}
 
 /* Buttons */
-.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);font:600 16px Archivo,sans-serif;text-decoration:none;cursor:pointer}
-.btn.alt-btn{background:transparent;color:var(--ink)}
-.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
-a:focus-visible,.btn:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:12px;border:2px solid var(--blue);background:var(--blue);color:#fff;font:600 16px Inter,sans-serif;text-decoration:none;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.btn.alt-btn{background:var(--card);color:var(--ink);border-color:var(--ink)}
+a:focus-visible,.btn:focus-visible,button:focus-visible{outline:3px solid var(--marker);outline-offset:3px}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 
 /* Hero */
-.hero{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:center;margin-bottom:44px}
-.photo{width:clamp(150px,20vw,230px);height:auto;aspect-ratio:1;object-fit:cover;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--red);background:#fff}
-.status{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;margin-bottom:14px}
-.status i{width:10px;height:10px;border-radius:50%;background:var(--red)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(28px,5vw,64px);align-items:center}
+.hello{display:block;margin-bottom:6px;font-size:30px;transform:rotate(-2deg);transform-origin:left}
+.note{display:inline-block;margin-top:24px;padding:12px 16px 12px 14px;background:var(--hl);color:#3a3410;transform:rotate(-1.2deg);box-shadow:2px 3px 0 rgba(0,0,0,.08);font-weight:600;font-size:15px}
+:root[data-theme=dark] .note{color:#fff6c8}
+.note b{color:inherit}
+.polaroid{position:relative;background:#fff;padding:12px 12px 46px;box-shadow:0 18px 40px -18px rgba(20,30,60,.45),0 1px 0 rgba(0,0,0,.06);transform:rotate(2.5deg);width:clamp(200px,24vw,280px)}
+.polaroid img{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+.polaroid .hand{position:absolute;left:0;right:0;bottom:8px;text-align:center;font-size:26px;color:#2d3340}
+.tape{position:absolute;width:96px;height:28px;background:rgba(255,224,130,.75);top:-12px;left:50%;transform:translateX(-50%) rotate(-4deg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
 
-/* Code editor */
-.editor{background:var(--ed);color:#e8e8e8;border-radius:10px;overflow:hidden;box-shadow:0 2px 0 #000,0 24px 48px -28px rgba(0,0,0,.55)}
-.bar{display:flex;align-items:center;gap:8px;background:var(--edl);padding:10px 14px;font:13px "JetBrains Mono",monospace;color:#a8a8a8}
-.dot{width:12px;height:12px;border-radius:50%;background:#555}
-.dot:first-child{background:var(--red)}
-.tab{margin-left:12px;background:var(--ed);color:#fff;padding:4px 12px;border-radius:4px 4px 0 0}
-.code{display:grid;grid-template-columns:auto minmax(0,1fr);font:clamp(13px,1.35vw,16px)/1.75 "JetBrains Mono",monospace;padding:18px 0;overflow-x:auto}
-.ln{color:#5c5c5c;text-align:right;padding:0 16px;user-select:none;white-space:pre}
-.src{white-space:pre;padding-right:18px}
-.k{color:#ff5a76}.s{color:#9be29b}.p{color:#8cc8ff}.c{color:#7a7a7a}
-.cur{display:inline-block;width:.6em;height:1.1em;background:var(--red);vertical-align:-.18em;animation:bl 1s steps(1) infinite}
-@keyframes bl{50%{opacity:0}}
+/* Sketch -> code -> product strip */
+.bench{margin-top:clamp(36px,5vw,60px);display:grid;grid-template-columns:minmax(0,1fr) minmax(120px,.42fr) minmax(0,1fr);align-items:center;gap:8px;padding:clamp(16px,3vw,28px);border-radius:18px;background-color:var(--paper);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;border:1.5px solid var(--line)}
+.bench svg{width:100%;height:auto;display:block}
+.bench figcaption{grid-column:1/-1;margin-top:10px;text-align:center;background:var(--paper);justify-self:center;padding:4px 12px;border-radius:8px}
+.bench .step-label{display:block;text-align:center;font-size:22px;margin-top:6px}
+.code-arrow{display:grid;justify-items:center;gap:8px}
+.code-arrow code{display:block;font:13px/1.5 "JetBrains Mono",monospace;color:var(--blue);background:var(--card);border:1px solid var(--line);padding:6px 10px;border-radius:8px;white-space:nowrap}
 
-/* Roles */
-.roles{list-style:none;margin:0;padding:0;border-top:3px solid var(--ink)}
-.roles li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) auto;gap:6px 28px;padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline}
-.roles h3{font-stretch:112%;font-weight:800;margin:0}
-.roles p{margin:0;color:var(--grey)}
-.tag{font-size:13px;font-weight:600;padding:4px 10px;border:1.5px solid var(--ink);white-space:nowrap}
-.tag.main{background:var(--red);border-color:var(--red);color:#fff}
+/* Roles as a hand-ticked checklist */
+.roles{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.roles li{display:grid;grid-template-columns:34px minmax(0,1fr) minmax(0,2fr) auto;gap:6px 22px;align-items:center;padding:18px 0;border-bottom:1.5px dashed var(--line)}
+.roles svg{width:30px;height:30px}
+.roles h3{margin:0;font-size:20px}
+.roles p{margin:0;color:var(--graphite)}
+.tag{font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;border:1.5px solid var(--ink);white-space:nowrap}
+.tag.main{background:var(--blue);border-color:var(--blue);color:#fff}
 
 /* Projects */
-.project{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,48px);align-items:center;padding:36px 0;border-top:3px solid var(--ink)}
-.project+.project{border-top-width:1px;border-top-color:var(--line)}
-.shot{background:var(--ed);border-radius:10px;overflow:hidden;aspect-ratio:16/10;position:relative}
-.shot svg{position:absolute;inset:0;width:100%;height:100%}
-.meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;padding:0;list-style:none}
-.meta li{font:13px "JetBrains Mono",monospace;border:1px solid var(--line);padding:4px 10px;background:var(--bg)}
-.feat{margin:0 0 20px;padding-left:20px}
+.project{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:center;padding:44px 0;border-top:1.5px dashed var(--line)}
+.project:first-of-type{border-top:0;padding-top:8px}
+.shot{position:relative;background:#141414;border-radius:12px;aspect-ratio:16/10;box-shadow:0 22px 44px -24px rgba(20,30,60,.5);transform:rotate(-.8deg)}
+.project:nth-of-type(even) .shot{transform:rotate(.8deg)}
+.shot::before,.shot::after{content:"";position:absolute;z-index:1;width:84px;height:24px;background:rgba(255,224,130,.75);top:-10px}
+.shot::before{left:18px;transform:rotate(-8deg)}
+.shot::after{right:18px;transform:rotate(6deg)}
+.shot svg{position:absolute;inset:0;width:100%;height:100%;border-radius:12px}
+.project .hand{display:block;margin:0 0 6px;transform:rotate(-1.5deg);transform-origin:left;font-size:23px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px;padding:0;list-style:none}
+.meta li{font:13px "JetBrains Mono",monospace;color:var(--blue);background:var(--blue-soft);padding:4px 10px;border-radius:6px}
+.feat{margin:0 0 18px;padding-left:20px}
 .feat li{margin-bottom:6px}
-.pill{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;margin-bottom:10px;background:var(--ink);color:var(--bg)}
-.pill.red{background:var(--red);color:#fff}
+.feat li::marker{color:var(--marker)}
+.pill{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;margin-bottom:10px;border-radius:999px;border:1.5px solid var(--ink)}
+.pill.red{background:var(--marker);border-color:var(--marker);color:#fff}
 .links{display:flex;flex-wrap:wrap;gap:12px}
 
-/* Skills */
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15em),1fr));gap:28px}
-.skills h3{border-top:3px solid var(--ink);padding-top:12px;margin-bottom:14px}
+/* Skills: keycaps */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16em),1fr));gap:30px 28px}
+.skills h3{font-size:18px;margin-bottom:12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.chips li{border:1px solid var(--line);background:var(--bg);padding:6px 12px;font-size:15px}
-.chips.next li{border-style:dashed;color:var(--grey)}
+.chips li{background:var(--card);border:1.5px solid var(--line);border-bottom-width:4px;border-radius:9px;padding:5px 11px;font-size:15px}
+.chips.next li{border-style:dashed;border-bottom-width:1.5px;color:var(--graphite)}
 
-/* About */
-.about{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,56px)}
-dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:12px 24px;border-top:3px solid var(--ink);padding-top:16px}
+/* About: an index card */
+.about{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);align-items:start}
+.card{background:var(--card);border:1.5px solid var(--line);border-top:5px solid var(--marker);border-radius:6px;padding:22px 24px;box-shadow:4px 4px 0 var(--grid);transform:rotate(.6deg)}
+dl{margin:0;display:grid;grid-template-columns:max-content minmax(0,1fr);gap:12px 22px}
 dt{font-weight:600}
 dd{margin:0}
 
 /* Contact */
-.dark{background:#111;color:#f2f2f2}
-.dark h2 span{color:var(--red)}
-.dark .muted{color:#b5b5b5}
+.dark{background:#141b2b;color:#eef2f8}
+.dark .muted{color:#b7c1d0}
+.dark .hand{color:#ff8a6b}
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
-.clist{list-style:none;margin:0;padding:0;border-top:3px solid #f2f2f2}
-.clist li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1px solid #333;align-items:center}
-.clist span{color:#b5b5b5;font-size:15px}
+.contact h2{margin-bottom:16px}
+.clist{list-style:none;margin:0;padding:0;border-top:1.5px dashed #3a4760}
+.clist li{display:grid;grid-template-columns:7em minmax(0,1fr);gap:12px;padding:16px 0;border-bottom:1.5px dashed #3a4760;align-items:center}
+.clist span{color:#b7c1d0;font-size:15px}
 .clist a{font-weight:600;overflow-wrap:anywhere}
-.clist a:hover{color:var(--red)}
-.dark .btn{background:var(--red);border-color:var(--red);color:#fff}
-.dark .btn:hover{background:#fff;border-color:#fff;color:#111}
-.dark .btn.alt-btn{background:transparent;border-color:#f2f2f2;color:#f2f2f2}
+.clist a:hover{color:#79a6ff}
+.dark .btn{box-shadow:3px 3px 0 #ff8a6b;border-color:#3d74e8;background:#3d74e8}
+.dark .btn.alt-btn{background:transparent;color:#eef2f8;border-color:#eef2f8}
 #copied{min-height:1.5em;margin:12px 0 0;font-weight:600;color:#9be29b}
-footer{background:#111;color:#8a8a8a;border-top:1px solid #2a2a2a;padding:22px max(5vw,16px);font-size:14px}
+footer{background:#141b2b;color:#8d98aa;border-top:1px solid #26324a;padding:22px max(5vw,16px);font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+footer .hand{color:#ff8a6b;font-size:21px}
 
-@media(max-width:860px){.project,.about,.contact{grid-template-columns:minmax(0,1fr)}.roles li{grid-template-columns:minmax(0,1fr) auto}.roles p{grid-column:1/-1;grid-row:2}}
-@media(max-width:600px){.hero{grid-template-columns:minmax(0,1fr)}.photo{width:150px;box-shadow:7px 7px 0 var(--red)}.ln{padding:0 10px}nav ul{gap:0 16px}.clist li{grid-template-columns:minmax(0,1fr);gap:2px}}
-@media(prefers-reduced-motion:reduce){.cur{animation:none}html{scroll-behavior:auto}}
+@media(max-width:900px){.project,.about,.contact{grid-template-columns:minmax(0,1fr)}.roles li{grid-template-columns:34px minmax(0,1fr) auto}.roles p{grid-column:2/-1;grid-row:2}}
+@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}.polaroid{order:-1;width:200px;margin:12px 0 0 8px}.bench{grid-template-columns:minmax(0,1fr)}.code-arrow svg{transform:rotate(90deg);width:70px}.code-arrow{padding:4px 0}}
+@media(max-width:600px){nav ul{gap:0 16px}.clist li{grid-template-columns:minmax(0,1fr);gap:2px}.shot,.project:nth-of-type(even) .shot,.card{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Makes clean lines look hand-drawn with a pencil -->
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3.2"/></filter>
+  <symbol id="tick" viewBox="0 0 30 30"><rect x="3" y="4" width="23" height="23" rx="4" fill="none" stroke="currentColor" stroke-width="2" filter="url(#rough)"/><path d="M8 15l5 6 12-16" fill="none" stroke="#e8553a" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)"/></symbol>
+</svg>
+
 <nav aria-label="Main">
   <div class="wrap">
-    <a class="logo" href="#top">Shin<b>.</b>dev</a>
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#1f5bd6"/><path d="M8 22c4-1 6-9 9-9s3 6 7 5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="24" cy="9" r="3" fill="#ff6b4a"/></svg>
+      Shin Thant Maung
+    </a>
     <ul>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -147,53 +179,105 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 <header class="band" id="top">
   <div class="wrap">
     <div class="hero">
-      <img class="photo" src="assets/shin-thant-maung.jpg" alt="Portrait of Shin Thant Maung" width="640" height="640">
       <div>
-        <div class="status"><i></i>Open to remote internships from January 2027</div>
+        <span class="hand hello">hi, I'm</span>
         <h1>Shin Thant Maung</h1>
-        <p class="lead">ICT student at Rangsit University, Thailand. I build full-stack web applications with React, Node.js and PostgreSQL, and I'm looking for a remote internship where I can learn from a real development team.</p>
+        <p class="lead">An ICT student at Rangsit University who turns <mark>ideas people sketch on paper</mark> into software people can actually use. I build full-stack web apps, chatbots and automated tests, and I'm looking for a remote internship.</p>
         <div class="cta">
-          <a class="btn" href="#projects">See my projects</a>
+          <a class="btn" href="#projects">See what I've built</a>
           <a class="btn alt-btn" href="#contact">Contact me</a>
         </div>
+        <p class="note">Open to remote internships from <b>1 January 2027</b></p>
       </div>
+      <figure class="polaroid" style="margin:0">
+        <span class="tape" aria-hidden="true"></span>
+        <img src="assets/shin-thant-maung.jpg" alt="Portrait of Shin Thant Maung" width="640" height="640">
+        <figcaption class="hand">that's me!</figcaption>
+      </figure>
     </div>
 
-    <div class="editor" role="img" aria-label="Code editor showing Shin's profile written as a JavaScript object">
-      <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="tab">shin.js</span></div>
-      <div class="code"><div class="ln" id="ln"></div><div class="src" id="src"><span class="k">const</span> shin = {
-  name: <span class="s">"Shin Thant Maung"</span>,
-  studying: <span class="s">"Information and Communication Technology, Rangsit University"</span>,
-  lookingFor: [<span class="s">"Web Developer"</span>, <span class="s">"Software Developer"</span>, <span class="s">"AI Automation"</span>,
-               <span class="s">"Chatbot Developer"</span>, <span class="s">"QA Tester"</span>],
-  available: <span class="s">"1 January 2027, remote"</span>,
-  stack: [<span class="s">"React"</span>, <span class="s">"Node.js"</span>, <span class="s">"Express"</span>, <span class="s">"PostgreSQL"</span>, <span class="s">"JavaScript"</span>],
-  languages: { english: <span class="s">"upper-intermediate"</span>, burmese: <span class="s">"native"</span> },
-  <span class="p">learn</span>() { <span class="k">return</span> <span class="s">"every day"</span>; }
-};
-<span class="c">// Building SmartStock right now. Say hello below.</span> <span class="cur"></span></div></div>
-    </div>
+    <!-- The idea of the site: a human sketch becomes working, tested software -->
+    <figure class="bench" style="margin-left:0;margin-right:0;margin-bottom:0">
+      <div>
+        <svg viewBox="0 0 420 300" role="img" aria-label="A pencil sketch of a booking app on graph paper, with handwritten notes">
+          <g fill="none" stroke="#6b7280" stroke-width="2.2" stroke-linecap="round" filter="url(#rough)">
+            <rect x="60" y="30" width="240" height="250" rx="16"/>
+            <path d="M60 76h240"/>
+            <circle cx="86" cy="53" r="9"/><path d="M106 49h90M106 58h60"/>
+            <rect x="82" y="96" width="196" height="40" rx="8"/><path d="M96 116h80"/>
+            <circle cx="98" cy="164" r="13"/><circle cx="138" cy="164" r="13"/><circle cx="178" cy="164" r="13"/><circle cx="218" cy="164" r="13"/><circle cx="258" cy="164" r="13"/>
+            <path d="M90 200h150M90 214h110"/>
+            <rect x="82" y="232" width="196" height="34" rx="17"/>
+          </g>
+          <path d="M248 160c4-8 16-8 20 0" fill="none" stroke="#e8553a" stroke-width="3" stroke-linecap="round" filter="url(#rough)"/>
+          <g font-family="Caveat, cursive" font-weight="700" fill="#e8553a" font-size="24">
+            <text x="312" y="112">what to</text><text x="312" y="134">book?</text>
+            <text x="300" y="196">free times</text>
+            <text x="300" y="262">big button!</text>
+          </g>
+          <g fill="none" stroke="#e8553a" stroke-width="2.2" stroke-linecap="round" filter="url(#rough)">
+            <path d="M310 118c-12 2-20 0-28 0M286 112l-6 6 7 5"/>
+            <path d="M300 186c-10-8-16-12-26-16M276 162l-4 9 9 1"/>
+            <path d="M298 252c-6 2-12 2-18 0M284 245l-6 7 8 3"/>
+          </g>
+        </svg>
+        <span class="hand step-label">1. the idea, on paper</span>
+      </div>
+
+      <div class="code-arrow" aria-hidden="true">
+        <code>findFreeTimes()</code>
+        <svg viewBox="0 0 140 50" width="130"><path d="M6 30c30-22 70-22 112-6" fill="none" stroke="#1f5bd6" stroke-width="3" stroke-linecap="round" filter="url(#rough)"/><path d="M106 12l16 13-19 7" fill="none" stroke="#1f5bd6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#rough)"/></svg>
+        <code>test("books a time")</code>
+        <span class="hand step-label" style="color:var(--blue)">2. code + tests</span>
+      </div>
+
+      <div>
+        <svg viewBox="0 0 420 300" role="img" aria-label="The finished booking app: a clean interface with free time slots, a booking button and a passing test badge">
+          <defs><filter id="lift" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#14204a" flood-opacity=".18"/></filter></defs>
+          <rect x="60" y="30" width="240" height="250" rx="16" fill="#fff" filter="url(#lift)"/>
+          <path d="M60 46a16 16 0 0 1 16-16h208a16 16 0 0 1 16 16v30H60z" fill="#1f5bd6"/>
+          <circle cx="86" cy="53" r="9" fill="#ff6b4a"/><rect x="104" y="46" width="92" height="8" rx="4" fill="#fff"/><rect x="104" y="58" width="58" height="6" rx="3" fill="#a9c2f5"/>
+          <rect x="82" y="96" width="196" height="40" rx="8" fill="#f2f5fa" stroke="#d6deea"/><rect x="96" y="112" width="104" height="8" rx="4" fill="#1d2127"/>
+          <g font-family="Inter, sans-serif" font-size="11" font-weight="600" text-anchor="middle">
+            <circle cx="98" cy="164" r="13" fill="#e8f0ff"/><text x="98" y="168" fill="#1f5bd6">10</text>
+            <circle cx="138" cy="164" r="13" fill="#e8f0ff"/><text x="138" y="168" fill="#1f5bd6">11</text>
+            <circle cx="178" cy="164" r="13" fill="#eef0f3"/><text x="178" y="168" fill="#a0a7b2">12</text>
+            <circle cx="218" cy="164" r="13" fill="#e8f0ff"/><text x="218" y="168" fill="#1f5bd6">14</text>
+            <circle cx="258" cy="164" r="13" fill="#1f5bd6"/><text x="258" y="168" fill="#fff">15</text>
+          </g>
+          <rect x="90" y="196" width="150" height="8" rx="4" fill="#c9d2df"/><rect x="90" y="211" width="110" height="8" rx="4" fill="#c9d2df"/>
+          <rect x="82" y="232" width="196" height="34" rx="17" fill="#1f5bd6"/>
+          <text x="180" y="254" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#fff">Book 15:00</text>
+          <g transform="translate(270 44)">
+            <rect width="132" height="34" rx="17" fill="#1a7f37"/>
+            <path d="M16 17l5 6 10-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="38" y="22" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#fff">tests passing</text>
+          </g>
+        </svg>
+        <span class="hand step-label" style="color:var(--blue)">3. real, tested software</span>
+      </div>
+      <figcaption class="muted">Every project here started as a sketch. Then I built it, tested it and put it online.</figcaption>
+    </figure>
   </div>
 </header>
 
 <section class="band alt" id="roles">
   <div class="wrap">
-    <h2>Internship roles I'm applying for</h2>
+    <div class="title"><h2>Internship roles I'm applying for</h2><span class="hand">remote, from Jan 2027</span></div>
     <ul class="roles">
-      <li><h3>Web Developer</h3><p>Front-end, back-end or full-stack: responsive pages, forms, REST APIs and databases.</p><span class="tag main">Main goal</span></li>
-      <li><h3>Software Developer</h3><p>Writing features, fixing bugs and reading existing code as part of a team.</p><span class="tag main">Main goal</span></li>
-      <li><h3>AI Automation</h3><p>Connecting apps and AI services so repeated business tasks run on their own.</p><span class="tag">Also open</span></li>
-      <li><h3>Chatbot Developer</h3><p>Building web and LINE chatbots that answer customer questions from real data.</p><span class="tag">Also open</span></li>
-      <li><h3>QA Tester</h3><p>Writing test cases, testing websites and apps, and reporting bugs clearly.</p><span class="tag">Also open</span></li>
+      <li><svg aria-hidden="true"><use href="#tick"/></svg><h3>Web Developer</h3><p>Front-end, back-end or full-stack: responsive pages, forms, REST APIs and databases.</p><span class="tag main">Main goal</span></li>
+      <li><svg aria-hidden="true"><use href="#tick"/></svg><h3>Software Developer</h3><p>Writing features, fixing bugs and reading existing code as part of a team.</p><span class="tag main">Main goal</span></li>
+      <li><svg aria-hidden="true"><use href="#tick"/></svg><h3>AI Automation</h3><p>Connecting apps and AI services so repeated business tasks run on their own.</p><span class="tag">Also open</span></li>
+      <li><svg aria-hidden="true"><use href="#tick"/></svg><h3>Chatbot Developer</h3><p>Building web and LINE chatbots that answer customer questions from real data.</p><span class="tag">Also open</span></li>
+      <li><svg aria-hidden="true"><use href="#tick"/></svg><h3>QA Tester</h3><p>Writing test cases, testing websites and apps, and reporting bugs clearly.</p><span class="tag">Also open</span></li>
     </ul>
   </div>
 </section>
 
 <section class="band" id="projects">
   <div class="wrap">
-    <h2>Projects</h2>
+    <div class="title"><h2>Things I've built</h2><span class="hand">all live on GitHub</span></div>
 
-    <!-- SmartStock -->
     <article class="project">
       <div class="shot" aria-hidden="true">
         <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
@@ -225,6 +309,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </svg>
       </div>
       <div>
+        <span class="hand">my biggest build so far</span>
         <span class="pill red">In progress · step 1 of 11 done</span>
         <h3>SmartStock: Inventory &amp; Sales Management System</h3>
         <p class="muted">A full-stack business system for companies with several shops and a warehouse. It tracks stock, sales, purchases, customers, expenses and profit in one place.</p>
@@ -265,6 +350,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </svg>
       </div>
       <div>
+        <span class="hand">where it all started</span>
         <span class="pill">Finished</span>
         <h3>Lotus Spa Bangkok: Spa Salon Booking Website</h3>
         <p class="muted">A responsive four-page website for a fictional day spa, where customers can browse treatments and book an appointment online.</p>
@@ -306,6 +392,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </svg>
       </div>
       <div>
+        <span class="hand">it books for you!</span>
         <span class="pill">Finished</span>
         <h3>Lotus Spa AI Assistant: Booking Chatbot</h3>
         <p class="muted">A chatbot that answers customers only from the spa's real data and books appointments inside the chat. A free demo mode runs in any browser; AI mode uses OpenAI with function calling.</p>
@@ -348,6 +435,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </svg>
       </div>
       <div>
+        <span class="hand">found 5 real bugs</span>
         <span class="pill">Finished</span>
         <h3>QA: Automated Testing for the Spa Booking Website</h3>
         <p class="muted">A complete test suite for Lotus Spa, written the way a QA team works: a test plan, automated browser tests, bug reports and tests that run on every code change.</p>
@@ -364,12 +452,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </div>
       </div>
     </article>
+
   </div>
 </section>
 
 <section class="band alt" id="skills">
   <div class="wrap">
-    <h2>Skills</h2>
+    <div class="title"><h2>My toolbox</h2><span class="hand">used in the projects above</span></div>
     <div class="skills" id="skill-list"></div>
   </div>
 </section>
@@ -377,24 +466,27 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
 <section class="band" id="about">
   <div class="wrap about">
     <div>
-      <h2>About me</h2>
+      <div class="title"><h2>About me</h2></div>
       <p class="lead">I'm an ICT student at Rangsit University in Thailand, originally from Myanmar. I enjoy turning real business problems into working software, from simple booking websites to a full inventory and sales system.</p>
       <p class="lead" style="margin-top:1em">I use AI coding assistants as part of my workflow, the same way many professional developers do, and I make sure I understand and can explain every part of the code I deliver. In my internship I want to learn how a real team plans, builds, tests and ships software.</p>
     </div>
-    <dl>
-      <dt>University</dt><dd>Rangsit University, Thailand</dd>
-      <dt>Degree</dt><dd>Bachelor's in Information and Communication Technology</dd>
-      <dt>Internship</dt><dd>Available from 1 January 2027</dd>
-      <dt>Work style</dt><dd>Remote, Bangkok time (UTC+7)</dd>
-      <dt>Languages</dt><dd>English (upper-intermediate), Burmese (native)</dd>
-    </dl>
+    <div class="card">
+      <dl>
+        <dt>University</dt><dd>Rangsit University, Thailand</dd>
+        <dt>Degree</dt><dd>Bachelor's in Information and Communication Technology</dd>
+        <dt>Internship</dt><dd>Available from 1 January 2027</dd>
+        <dt>Work style</dt><dd>Remote, Bangkok time (UTC+7)</dd>
+        <dt>Languages</dt><dd>English (upper-intermediate), Burmese (native)</dd>
+      </dl>
+    </div>
   </div>
 </section>
 
 <section class="band dark" id="contact">
   <div class="wrap contact">
     <div>
-      <h2>Let's work together<span>.</span></h2>
+      <span class="hand" style="display:block;font-size:28px;transform:rotate(-2deg);transform-origin:left;margin-bottom:6px">got an idea?</span>
+      <h2>Let's build it together.</h2>
       <p class="muted">Have a remote internship opening? Email me or message me on LinkedIn. I usually reply within a day.</p>
       <div class="cta">
         <a class="btn" href="mailto:shinnthantmg8602@gmail.com?subject=Internship%20opportunity">Email me</a>
@@ -411,11 +503,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
   </div>
 </section>
 
-<footer><div class="wrap"><span>© <span id="year">2026</span> Shin Thant Maung</span><span>Built with HTML, CSS and JavaScript · Hosted on GitHub Pages</span></div></footer>
+<footer><div class="wrap"><span>© <span id="year">2026</span> Shin Thant Maung</span><span class="hand">drawn by hand, built with code</span></div></footer>
 
 <script>
 {
-  // Skills: "next" groups are shown with dashed borders (learning in upcoming projects)
+  // Skills: "next" groups are shown with dashed keycaps (learning in upcoming projects)
   const skills = [
     { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Responsive design"] },
     { title: "Back-end and data", items: ["Node.js", "Express", "PostgreSQL", "SQL", "REST APIs", "JWT authentication"] },
@@ -427,10 +519,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
   document.getElementById("skill-list").innerHTML = skills.map(g =>
     `<div><h3>${g.title}</h3><ul class="chips${g.next ? " next" : ""}">${g.items.map(i => `<li>${i}</li>`).join("")}</ul></div>`
   ).join("");
-
-  // Line numbers for the code editor
-  const lines = document.getElementById("src").textContent.split("\n").length;
-  document.getElementById("ln").textContent = Array.from({ length: lines }, (_, i) => i + 1).join("\n");
 
   document.getElementById("year").textContent = new Date().getFullYear();
 

@@ -281,6 +281,48 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </div>
       </div>
     </article>
+
+    <!-- QA testing -->
+    <article class="project">
+      <div class="shot" aria-hidden="true">
+        <svg viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="640" height="400" fill="#141414"/>
+          <rect width="640" height="34" fill="#1f1f1f"/>
+          <circle cx="22" cy="17" r="6" fill="#e4002b"/><circle cx="42" cy="17" r="6" fill="#555"/><circle cx="62" cy="17" r="6" fill="#555"/>
+          <text x="92" y="22" font-family="monospace" font-size="13" fill="#a8a8a8">npx playwright test</text>
+          <g font-family="monospace" font-size="14">
+            <text x="24" y="70" fill="#9be29b">✓</text><text x="46" y="70" fill="#d6d6d6">TC-12 times run every 30 minutes</text>
+            <text x="24" y="98" fill="#9be29b">✓</text><text x="46" y="98" fill="#d6d6d6">TC-17 phone numbers must be Thai numbers</text>
+            <text x="24" y="126" fill="#9be29b">✓</text><text x="46" y="126" fill="#d6d6d6">TC-21 time blocked when both therapists busy</text>
+            <text x="24" y="154" fill="#9be29b">✓</text><text x="46" y="154" fill="#d6d6d6">TC-24 (BUG-001) past dates can't be booked</text>
+            <text x="24" y="182" fill="#9be29b">✓</text><text x="46" y="182" fill="#d6d6d6">TC-26 (BUG-003) HTML in name shown as text</text>
+            <text x="24" y="210" fill="#9be29b">✓</text><text x="46" y="210" fill="#d6d6d6">TC-31 (BUG-005) every booking has its own code</text>
+            <text x="24" y="238" fill="#9be29b">✓</text><text x="46" y="238" fill="#d6d6d6">TC-30 no sideways scroll at 360px</text>
+          </g>
+          <rect x="24" y="270" width="592" height="1" fill="#333"/>
+          <text x="24" y="306" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#9be29b">79 passed</text>
+          <text x="210" y="306" font-family="Arial, sans-serif" font-size="20" fill="#a8a8a8">5 bugs found and fixed</text>
+          <rect x="24" y="332" width="154" height="30" rx="4" fill="#2ea043"/>
+          <text x="40" y="353" font-family="Arial, sans-serif" font-weight="700" font-size="14" fill="#fff">Tests · passing</text>
+        </svg>
+      </div>
+      <div>
+        <span class="pill">Finished</span>
+        <h3>QA: Automated Testing for the Spa Booking Website</h3>
+        <p class="muted">A complete test suite for Lotus Spa, written the way a QA team works: a test plan, automated browser tests, bug reports and tests that run on every code change.</p>
+        <ul class="feat">
+          <li>31 Playwright test cases, run on desktop and on a Pixel 7 phone</li>
+          <li>Found and fixed 5 real bugs, including an HTML injection security issue</li>
+          <li>Professional test plan and bug reports with steps, expected and actual results</li>
+          <li>GitHub Actions runs every test automatically on each push</li>
+        </ul>
+        <ul class="meta"><li>Playwright</li><li>JavaScript</li><li>GitHub Actions</li><li>Test plans</li><li>Bug reports</li></ul>
+        <div class="links">
+          <a class="btn" href="https://github.com/shinthantmg/spa-salon-booking/blob/main/docs/BUG_REPORTS.md">Read the bug reports</a>
+          <a class="btn alt-btn" href="https://github.com/shinthantmg/spa-salon-booking/tree/main/tests/e2e">View tests</a>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -336,8 +378,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
   const skills = [
     { title: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Responsive design"] },
     { title: "Back-end and data", items: ["Node.js", "Express", "PostgreSQL", "SQL", "REST APIs", "JWT authentication"] },
+    { title: "Testing and QA", items: ["Playwright", "End-to-end testing", "Test plans", "Bug reports", "GitHub Actions (CI)"] },
     { title: "Tools", items: ["Git", "GitHub", "VS Code", "npm", "pgAdmin", "AI coding assistants"] },
-    { title: "Learning next", next: true, items: ["Automated testing (Playwright)", "OpenAI API", "n8n automation", "LINE Messaging API"] }
+    { title: "Learning next", next: true, items: ["OpenAI API", "n8n automation", "LINE Messaging API"] }
   ];
   document.getElementById("skill-list").innerHTML = skills.map(g =>
     `<div><h3>${g.title}</h3><ul class="chips${g.next ? " next" : ""}">${g.items.map(i => `<li>${i}</li>`).join("")}</ul></div>`
